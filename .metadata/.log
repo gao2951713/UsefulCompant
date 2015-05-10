@@ -1,0 +1,2215 @@
+!SESSION 2015-04-25 15:44:16.022 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.7.0_67
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.update.configurator 4 0 2015-04-25 15:44:28.159
+!MESSAGE ConfigurationParser.parse() error:
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; 文件提前结束。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(Unknown Source)
+	at org.eclipse.update.internal.configurator.ConfigurationParser.parse(ConfigurationParser.java:76)
+	at org.eclipse.update.internal.configurator.PlatformConfiguration.loadConfig(PlatformConfiguration.java:1097)
+	at org.eclipse.update.internal.configurator.PlatformConfiguration.initializeCurrent(PlatformConfiguration.java:752)
+	at org.eclipse.update.internal.configurator.PlatformConfiguration.<init>(PlatformConfiguration.java:104)
+	at org.eclipse.update.internal.configurator.PlatformConfiguration.startup(PlatformConfiguration.java:707)
+	at org.eclipse.update.internal.configurator.ConfigurationActivator.getPlatformConfiguration(ConfigurationActivator.java:404)
+	at org.eclipse.update.internal.configurator.ConfigurationActivator.initialize(ConfigurationActivator.java:136)
+	at org.eclipse.update.internal.configurator.ConfigurationActivator.start(ConfigurationActivator.java:69)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:771)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:764)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:721)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:936)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:319)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571)
+	at org.eclipse.osgi.container.Module.start(Module.java:439)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:320)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:568)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponent.createInstance(ServiceComponent.java:493)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.createInstance(ServiceComponentProp.java:270)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.build(ServiceComponentProp.java:331)
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponent(InstanceProcess.java:620)
+	at org.eclipse.equinox.internal.ds.ServiceReg.getService(ServiceReg.java:53)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse$1.run(ServiceFactoryUse.java:212)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.factoryGetService(ServiceFactoryUse.java:210)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.getService(ServiceFactoryUse.java:111)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceConsumer$2.getService(ServiceConsumer.java:45)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.getService(ServiceRegistrationImpl.java:496)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.getService(ServiceRegistry.java:461)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getService(BundleContextImpl.java:619)
+	at org.osgi.util.tracker.ServiceTracker.addingService(ServiceTracker.java:414)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:941)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256)
+	at org.osgi.util.tracker.AbstractTracked.track(AbstractTracked.java:229)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:901)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:109)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:914)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:862)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:801)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:127)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:225)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:464)
+	at org.eclipse.equinox.internal.ds.InstanceProcess.registerService(InstanceProcess.java:536)
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponents(InstanceProcess.java:260)
+	at org.eclipse.equinox.internal.ds.Resolver.buildNewlySatisfied(Resolver.java:473)
+	at org.eclipse.equinox.internal.ds.Resolver.enableComponents(Resolver.java:217)
+	at org.eclipse.equinox.internal.ds.SCRManager.performWork(SCRManager.java:816)
+	at org.eclipse.equinox.internal.ds.SCRManager$QueuedJob.dispatch(SCRManager.java:783)
+	at org.eclipse.equinox.internal.ds.WorkThread.run(WorkThread.java:89)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-04-25 15:46:29.982
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-04-25 15:46:29.982
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\hunter'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jface 4 2 2015-04-25 17:39:08.673
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jface".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jst.j2ee.commonarchivecore.internal.util.ArchiveUtil.getModuleFile(ArchiveUtil.java:342)
+	at org.eclipse.jst.jee.ui.internal.navigator.OpenJEEResourceAction.openEObject(OpenJEEResourceAction.java:388)
+	at org.eclipse.jst.jee.ui.internal.navigator.OpenJEEResourceAction.run(OpenJEEResourceAction.java:339)
+	at org.eclipse.ui.actions.RetargetAction.run(RetargetAction.java:229)
+	at org.eclipse.ui.navigator.CommonNavigatorManager$3.open(CommonNavigatorManager.java:185)
+	at org.eclipse.ui.OpenAndLinkWithEditorHelper$InternalListener.open(OpenAndLinkWithEditorHelper.java:48)
+	at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:853)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:50)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:178)
+	at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:850)
+	at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1142)
+	at org.eclipse.ui.navigator.CommonViewer.handleOpen(CommonViewer.java:462)
+	at org.eclipse.jface.viewers.StructuredViewer$6.handleOpen(StructuredViewer.java:1249)
+	at org.eclipse.jface.util.OpenStrategy.fireOpenEvent(OpenStrategy.java:278)
+	at org.eclipse.jface.util.OpenStrategy.access$2(OpenStrategy.java:272)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:313)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.wst.server.core 4 0 2015-04-25 18:07:38.935
+!MESSAGE Server Tomcat v7.0 Server at localhost failed to start.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2015-04-25 18:09:36.598
+!MESSAGE Server Tomcat v7.0 Server at localhost failed to start.
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2015-04-25 18:10:44.282
+!MESSAGE The Tomcat server configuration at \Servers\Tomcat v7.0 Server at localhost-config is missing. Check the server for errors.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-25 18:22:42.730
+!MESSAGE codingYun-Demo has multiple source entries, this is not supported yet
+
+!ENTRY org.eclipse.jst.jee 4 0 2015-04-25 18:27:41.083
+!MESSAGE [Working copy] __2F_codingYun_2D_Demo_2F_WebContent_2F_WEB_2D_INF_2F_jsp_2F_system_2F_common_2F_topSideBar_2E_jsp.java [in <default> [in src [in codingYun-Demo]]] does not exist
+!STACK 1
+Java Model Exception: Java Model Status [[Working copy] __2F_codingYun_2D_Demo_2F_WebContent_2F_WEB_2D_INF_2F_jsp_2F_system_2F_common_2F_topSideBar_2E_jsp.java [in <default> [in src [in codingYun-Demo]]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newJavaModelException(JavaElement.java:566)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:247)
+	at org.eclipse.jdt.internal.core.SourceRefElement.generateInfos(SourceRefElement.java:107)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:579)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:316)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:302)
+	at org.eclipse.jdt.internal.core.SourceType.getAnnotations(SourceType.java:201)
+	at org.eclipse.jst.jee.model.internal.WebAnnotationReader.createJavaeeObject(WebAnnotationReader.java:152)
+	at org.eclipse.jst.jee.model.internal.WebAnnotationReader.analyzeCompilationUnit(WebAnnotationReader.java:145)
+	at org.eclipse.jst.jee.model.internal.WebAnnotationReader.processAddedCompilationUnit(WebAnnotationReader.java:257)
+	at org.eclipse.jst.jee.model.internal.WebAnnotationReader.processChangedCompilationUnit(WebAnnotationReader.java:270)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.recursevilyProcessCompilationUnits(AbstractAnnotationModelProvider.java:553)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.internalPostReconcile(AbstractAnnotationModelProvider.java:466)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.elementChanged(AbstractAnnotationModelProvider.java:446)
+	at org.eclipse.jdt.internal.core.DeltaProcessor$4.run(DeltaProcessor.java:1695)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyListeners(DeltaProcessor.java:1685)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fireReconcileDelta(DeltaProcessor.java:1537)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fire(DeltaProcessor.java:1496)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:770)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5358)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPBatchValidator.validate(JSPBatchValidator.java:528)
+	at org.eclipse.wst.validation.Validator$V2.validate(Validator.java:1159)
+	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:704)
+	at org.eclipse.wst.validation.internal.ValBuilderJob$Visitor.visit(ValBuilderJob.java:351)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:69)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:49)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.deltaBuild(ValBuilderJob.java:211)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.run(ValBuilderJob.java:179)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.runInWorkspace(ValBuilderJob.java:126)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-04-25 18:27:41.116
+!MESSAGE [Working copy] __2F_codingYun_2D_Demo_2F_WebContent_2F_WEB_2D_INF_2F_jsp_2F_system_2F_common_2F_topSideBar_2E_jsp.java [in <default> [in src [in codingYun-Demo]]] does not exist
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-25 18:27:45.022
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-25 18:27:45.109
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.jdt.core 4 1006 2015-04-25 18:27:47.003
+!MESSAGE E:\Source\Docs\codingYun-Demo-login\codingYun-Demo\WebContent\WEB-INF\lib\aopalliance-1.0.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2015-04-25 18:27:47.006
+!MESSAGE E:\Source\Docs\codingYun-Demo-login\codingYun-Demo\WebContent\WEB-INF\lib\aopalliance-1.0.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2015-04-25 18:27:47.008
+!MESSAGE E:\Source\Docs\codingYun-Demo-login\codingYun-Demo\WebContent\WEB-INF\lib\aopalliance-1.0.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2015-04-25 18:27:47.010
+!MESSAGE E:\Source\Docs\codingYun-Demo-login\codingYun-Demo\WebContent\WEB-INF\lib\aopalliance-1.0.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2015-04-25 18:27:47.012
+!MESSAGE E:\Source\Docs\codingYun-Demo-login\codingYun-Demo\WebContent\WEB-INF\lib\aopalliance-1.0.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2015-04-25 18:27:47.014
+!MESSAGE E:\Source\Docs\codingYun-Demo-login\codingYun-Demo\WebContent\WEB-INF\lib\aopalliance-1.0.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2015-04-25 18:27:47.046
+!MESSAGE E:\Source\Docs\codingYun-Demo-login\codingYun-Demo\WebContent\WEB-INF\lib\aopalliance-1.0.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2015-04-25 18:27:47.047
+!MESSAGE E:\Source\Docs\codingYun-Demo-login\codingYun-Demo\WebContent\WEB-INF\lib\aopalliance-1.0.jar is not on its project's build path
+
+!ENTRY org.eclipse.jst.jee 4 0 2015-04-25 18:27:47.805
+!MESSAGE [Working copy] __2F_codingYun_2D_Demo_2F_WebContent_2F_WEB_2D_INF_2F_jsp_2F_system_2F_common_2F_leftSideBar_2E_jsp.java [in <default> [in src [in codingYun-Demo]]] does not exist
+!STACK 1
+Java Model Exception: Java Model Status [[Working copy] __2F_codingYun_2D_Demo_2F_WebContent_2F_WEB_2D_INF_2F_jsp_2F_system_2F_common_2F_leftSideBar_2E_jsp.java [in <default> [in src [in codingYun-Demo]]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newJavaModelException(JavaElement.java:566)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:247)
+	at org.eclipse.jdt.internal.core.SourceRefElement.generateInfos(SourceRefElement.java:107)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:579)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:316)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:302)
+	at org.eclipse.jdt.internal.core.SourceType.getAnnotations(SourceType.java:201)
+	at org.eclipse.jst.jee.model.internal.WebAnnotationReader.createJavaeeObject(WebAnnotationReader.java:152)
+	at org.eclipse.jst.jee.model.internal.WebAnnotationReader.analyzeCompilationUnit(WebAnnotationReader.java:145)
+	at org.eclipse.jst.jee.model.internal.WebAnnotationReader.processAddedCompilationUnit(WebAnnotationReader.java:257)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.recursevilyProcessCompilationUnits(AbstractAnnotationModelProvider.java:543)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.recursevilyProcessCompilationUnits(AbstractAnnotationModelProvider.java:562)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.recursevilyProcessPackages(AbstractAnnotationModelProvider.java:519)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.recursevilyProcessPackages(AbstractAnnotationModelProvider.java:527)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.processChangedProjectChildren(AbstractAnnotationModelProvider.java:501)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.processChangedProject(AbstractAnnotationModelProvider.java:492)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.internalPostChange(AbstractAnnotationModelProvider.java:457)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.elementChanged(AbstractAnnotationModelProvider.java:448)
+	at org.eclipse.jdt.internal.core.DeltaProcessor$4.run(DeltaProcessor.java:1695)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyListeners(DeltaProcessor.java:1685)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.firePostChangeDelta(DeltaProcessor.java:1519)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fire(DeltaProcessor.java:1495)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:770)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5358)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPBatchValidator.validate(JSPBatchValidator.java:528)
+	at org.eclipse.wst.validation.Validator$V2.validate(Validator.java:1159)
+	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:704)
+	at org.eclipse.wst.validation.internal.ValBuilderJob$Visitor.visit(ValBuilderJob.java:351)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:69)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:49)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.deltaBuild(ValBuilderJob.java:211)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.run(ValBuilderJob.java:179)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.runInWorkspace(ValBuilderJob.java:126)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-04-25 18:27:47.806
+!MESSAGE [Working copy] __2F_codingYun_2D_Demo_2F_WebContent_2F_WEB_2D_INF_2F_jsp_2F_system_2F_common_2F_leftSideBar_2E_jsp.java [in <default> [in src [in codingYun-Demo]]] does not exist
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-25 18:27:51.266
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-25 18:27:51.321
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-25 18:28:16.646
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-25 18:28:16.661
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-25 18:29:16.648
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-25 18:29:16.679
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-25 18:29:16.993
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-25 18:31:19.673
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-04-25 18:31:19.706
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.ui 4 4 2015-04-25 18:39:53.821
+!MESSAGE Conflicting handlers for org.eclipse.ui.navigate.backwardHistory: {ActionHandler(org.eclipse.ui.internal.NavigationHistoryAction@5f6d7b)} vs {ActionHandler(org.eclipse.ui.internal.dialogs.PreferencePageHistory$1@6a569c)}
+
+!ENTRY org.eclipse.debug.core 4 2 2015-04-25 18:40:26.187
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.debug.core".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.xsl.internal.debug.ui.XSLDebugUILaunchListener.launchesTerminated(XSLDebugUILaunchListener.java:64)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.run(LaunchManager.java:318)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.notify(LaunchManager.java:270)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:1055)
+	at org.eclipse.debug.core.Launch.fireTerminate(Launch.java:405)
+	at org.eclipse.debug.core.Launch.handleDebugEvents(Launch.java:577)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1151)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1187)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:431)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.debug.core 4 120 2015-04-25 18:40:26.189
+!MESSAGE An exception occurred during launch change notification.
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wst.xsl.internal.debug.ui.XSLDebugUILaunchListener.launchesTerminated(XSLDebugUILaunchListener.java:64)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.run(LaunchManager.java:318)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.notify(LaunchManager.java:270)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:1055)
+	at org.eclipse.debug.core.Launch.fireTerminate(Launch.java:405)
+	at org.eclipse.debug.core.Launch.handleDebugEvents(Launch.java:577)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1151)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1187)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:431)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.wst.server.core 4 0 2015-04-25 18:40:32.313
+!MESSAGE Server Tomcat v7.0 Server at localhost failed to start.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2015-04-25 18:41:05.811
+!MESSAGE Server Tomcat v7.0 Server at localhost failed to start.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2015-04-25 18:41:27.196
+!MESSAGE Server Tomcat v7.0 Server at localhost failed to start.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2015-04-25 18:42:09.917
+!MESSAGE Server Tomcat v7.0 Server at localhost failed to start.
+
+!ENTRY org.eclipse.ui.navigator 4 2 2015-04-25 23:47:40.089
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.navigator".
+!STACK 0
+java.lang.IllegalStateException: Preference node "codingYun-Demo" has been removed.
+	at org.eclipse.core.internal.preferences.EclipsePreferences.checkRemoved(EclipsePreferences.java:200)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.addNodeChangeListener(EclipsePreferences.java:167)
+	at org.eclipse.jdt.internal.core.JavaProject.getEclipsePreferences(JavaProject.java:1510)
+	at org.eclipse.jdt.internal.core.JavaProject.getOption(JavaProject.java:1657)
+	at org.eclipse.jdt.internal.core.JavaProjectElementInfo.computeNonJavaResources(JavaProjectElementInfo.java:127)
+	at org.eclipse.jdt.internal.core.JavaProjectElementInfo.getNonJavaResources(JavaProjectElementInfo.java:243)
+	at org.eclipse.jdt.internal.core.JavaProject.getNonJavaResources(JavaProject.java:1650)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerContentProvider.getPackageFragmentRoots(PackageExplorerContentProvider.java:364)
+	at org.eclipse.jdt.ui.StandardJavaElementContentProvider.getChildren(StandardJavaElementContentProvider.java:183)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerContentProvider.getChildren(PackageExplorerContentProvider.java:307)
+	at org.eclipse.jdt.internal.ui.navigator.JavaNavigatorContentProvider.getChildren(JavaNavigatorContentProvider.java:169)
+	at org.eclipse.jdt.internal.ui.navigator.JavaNavigatorContentProvider.getPipelinedChildren(JavaNavigatorContentProvider.java:190)
+	at org.eclipse.ui.internal.navigator.extensions.SafeDelegateTreeContentProvider.getPipelinedChildren(SafeDelegateTreeContentProvider.java:178)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.pipelineChildren(NavigatorContentServiceContentProvider.java:206)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.access$1(NavigatorContentServiceContentProvider.java:192)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider$1.run(NavigatorContentServiceContentProvider.java:161)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.internalGetChildren(NavigatorContentServiceContentProvider.java:139)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.getChildren(NavigatorContentServiceContentProvider.java:119)
+	at org.eclipse.jst.jee.ui.internal.navigator.JEE5ContentProvider$1.run(JEE5ContentProvider.java:142)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:175)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:390)
+	at org.eclipse.ltk.internal.ui.refactoring.RefactoringWizardDialog2.run(RefactoringWizardDialog2.java:331)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizard.internalPerformFinish(RefactoringWizard.java:637)
+	at org.eclipse.ltk.ui.refactoring.UserInputWizardPage.performFinish(UserInputWizardPage.java:153)
+	at org.eclipse.ltk.ui.refactoring.resource.DeleteResourcesWizard$DeleteResourcesRefactoringConfigurationPage.performFinish(DeleteResourcesWizard.java:202)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizard.performFinish(RefactoringWizard.java:710)
+	at org.eclipse.ltk.internal.ui.refactoring.RefactoringWizardDialog2.okPressed(RefactoringWizardDialog2.java:455)
+	at org.eclipse.jface.dialogs.Dialog.buttonPressed(Dialog.java:466)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:619)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:832)
+	at org.eclipse.jface.window.Window.open(Window.java:808)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizardOpenOperation$1.run(RefactoringWizardOpenOperation.java:187)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizardOpenOperation.run(RefactoringWizardOpenOperation.java:202)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizardOpenOperation.run(RefactoringWizardOpenOperation.java:122)
+	at org.eclipse.ltk.internal.ui.refactoring.actions.DeleteResourcesHandler.execute(DeleteResourcesHandler.java:40)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:294)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.GeneratedMethodAccessor49.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:247)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:229)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:149)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommandInContext(LegacyHandlerService.java:396)
+	at org.eclipse.ui.internal.ide.actions.LTKLauncher.runCommand(LTKLauncher.java:95)
+	at org.eclipse.ui.internal.ide.actions.LTKLauncher.openDeleteWizard(LTKLauncher.java:47)
+	at org.eclipse.ui.actions.DeleteResourceAction.run(DeleteResourceAction.java:474)
+	at org.eclipse.jdt.internal.ui.refactoring.reorg.DeleteAction.run(DeleteAction.java:197)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:275)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:251)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:519)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:595)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:511)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:420)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui.navigator 4 0 2015-04-25 23:47:40.143
+!MESSAGE An exception occurred invoking extension: org.eclipse.ui.navigator.resourceContent for object P/codingYun-Demo
+!STACK 0
+java.lang.IllegalStateException: Preference node "codingYun-Demo" has been removed.
+	at org.eclipse.core.internal.preferences.EclipsePreferences.checkRemoved(EclipsePreferences.java:200)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.addNodeChangeListener(EclipsePreferences.java:167)
+	at org.eclipse.jdt.internal.core.JavaProject.getEclipsePreferences(JavaProject.java:1510)
+	at org.eclipse.jdt.internal.core.JavaProject.getOption(JavaProject.java:1657)
+	at org.eclipse.jdt.internal.core.JavaProjectElementInfo.computeNonJavaResources(JavaProjectElementInfo.java:127)
+	at org.eclipse.jdt.internal.core.JavaProjectElementInfo.getNonJavaResources(JavaProjectElementInfo.java:243)
+	at org.eclipse.jdt.internal.core.JavaProject.getNonJavaResources(JavaProject.java:1650)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerContentProvider.getPackageFragmentRoots(PackageExplorerContentProvider.java:364)
+	at org.eclipse.jdt.ui.StandardJavaElementContentProvider.getChildren(StandardJavaElementContentProvider.java:183)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerContentProvider.getChildren(PackageExplorerContentProvider.java:307)
+	at org.eclipse.jdt.internal.ui.navigator.JavaNavigatorContentProvider.getChildren(JavaNavigatorContentProvider.java:169)
+	at org.eclipse.jdt.internal.ui.navigator.JavaNavigatorContentProvider.getPipelinedChildren(JavaNavigatorContentProvider.java:190)
+	at org.eclipse.ui.internal.navigator.extensions.SafeDelegateTreeContentProvider.getPipelinedChildren(SafeDelegateTreeContentProvider.java:178)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.pipelineChildren(NavigatorContentServiceContentProvider.java:206)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.access$1(NavigatorContentServiceContentProvider.java:192)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider$1.run(NavigatorContentServiceContentProvider.java:161)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.internalGetChildren(NavigatorContentServiceContentProvider.java:139)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.getChildren(NavigatorContentServiceContentProvider.java:119)
+	at org.eclipse.jst.jee.ui.internal.navigator.JEE5ContentProvider$1.run(JEE5ContentProvider.java:142)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:175)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:390)
+	at org.eclipse.ltk.internal.ui.refactoring.RefactoringWizardDialog2.run(RefactoringWizardDialog2.java:331)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizard.internalPerformFinish(RefactoringWizard.java:637)
+	at org.eclipse.ltk.ui.refactoring.UserInputWizardPage.performFinish(UserInputWizardPage.java:153)
+	at org.eclipse.ltk.ui.refactoring.resource.DeleteResourcesWizard$DeleteResourcesRefactoringConfigurationPage.performFinish(DeleteResourcesWizard.java:202)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizard.performFinish(RefactoringWizard.java:710)
+	at org.eclipse.ltk.internal.ui.refactoring.RefactoringWizardDialog2.okPressed(RefactoringWizardDialog2.java:455)
+	at org.eclipse.jface.dialogs.Dialog.buttonPressed(Dialog.java:466)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:619)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:832)
+	at org.eclipse.jface.window.Window.open(Window.java:808)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizardOpenOperation$1.run(RefactoringWizardOpenOperation.java:187)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizardOpenOperation.run(RefactoringWizardOpenOperation.java:202)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizardOpenOperation.run(RefactoringWizardOpenOperation.java:122)
+	at org.eclipse.ltk.internal.ui.refactoring.actions.DeleteResourcesHandler.execute(DeleteResourcesHandler.java:40)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:294)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.GeneratedMethodAccessor49.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:247)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:229)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:149)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommandInContext(LegacyHandlerService.java:396)
+	at org.eclipse.ui.internal.ide.actions.LTKLauncher.runCommand(LTKLauncher.java:95)
+	at org.eclipse.ui.internal.ide.actions.LTKLauncher.openDeleteWizard(LTKLauncher.java:47)
+	at org.eclipse.ui.actions.DeleteResourceAction.run(DeleteResourceAction.java:474)
+	at org.eclipse.jdt.internal.ui.refactoring.reorg.DeleteAction.run(DeleteAction.java:197)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:275)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:251)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:519)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:595)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:511)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:420)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2015-04-26 01:07:17.556
+!MESSAGE Several ports (8005, 8080, 8009) required by Tomcat v7.0 Server at localhost are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
+
+!ENTRY org.eclipse.wst.server.core 4 0 2015-04-26 01:08:36.969
+!MESSAGE Server Tomcat v7.0 Server at localhost failed to start.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2015-04-26 01:12:43.271
+!MESSAGE Server Tomcat v7.0 Server at localhost failed to start.
+!SESSION 2015-05-01 21:26:49.220 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.7.0_67
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-05-01 21:27:57.892
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-05-01 21:27:57.908
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\hunter'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jst.jee 4 0 2015-05-01 21:37:27.648
+!MESSAGE [Working copy] __2F_codingYun_2D_Demo_2F_WebContent_2F_WEB_2D_INF_2F_jsp_2F_system_2F_common_2F_leftSideBar_2E_jsp.java [in <default> [in src [in codingYun-Demo]]] does not exist
+!STACK 1
+Java Model Exception: Java Model Status [[Working copy] __2F_codingYun_2D_Demo_2F_WebContent_2F_WEB_2D_INF_2F_jsp_2F_system_2F_common_2F_leftSideBar_2E_jsp.java [in <default> [in src [in codingYun-Demo]]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newJavaModelException(JavaElement.java:566)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:247)
+	at org.eclipse.jdt.internal.core.SourceRefElement.generateInfos(SourceRefElement.java:107)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:579)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:316)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:302)
+	at org.eclipse.jdt.internal.core.SourceType.isClass(SourceType.java:592)
+	at org.eclipse.jst.jee.model.internal.WebAnnotationReader.analyzeCompilationUnit(WebAnnotationReader.java:126)
+	at org.eclipse.jst.jee.model.internal.WebAnnotationReader.processAddedCompilationUnit(WebAnnotationReader.java:257)
+	at org.eclipse.jst.jee.model.internal.WebAnnotationReader.processChangedCompilationUnit(WebAnnotationReader.java:270)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.recursevilyProcessCompilationUnits(AbstractAnnotationModelProvider.java:553)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.internalPostReconcile(AbstractAnnotationModelProvider.java:466)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.elementChanged(AbstractAnnotationModelProvider.java:446)
+	at org.eclipse.jdt.internal.core.DeltaProcessor$4.run(DeltaProcessor.java:1695)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyListeners(DeltaProcessor.java:1685)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fireReconcileDelta(DeltaProcessor.java:1537)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fire(DeltaProcessor.java:1496)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:770)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5358)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPBatchValidator.validate(JSPBatchValidator.java:528)
+	at org.eclipse.wst.validation.Validator$V2.validate(Validator.java:1159)
+	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:704)
+	at org.eclipse.wst.validation.internal.ValBuilderJob$Visitor.visit(ValBuilderJob.java:351)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:69)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:49)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.deltaBuild(ValBuilderJob.java:211)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.run(ValBuilderJob.java:179)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.runInWorkspace(ValBuilderJob.java:126)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-05-01 21:37:27.648
+!MESSAGE [Working copy] __2F_codingYun_2D_Demo_2F_WebContent_2F_WEB_2D_INF_2F_jsp_2F_system_2F_common_2F_leftSideBar_2E_jsp.java [in <default> [in src [in codingYun-Demo]]] does not exist
+
+!ENTRY org.eclipse.jst.server.core 4 0 2015-05-01 22:44:32.135
+!MESSAGE Could not launch in profiling mode because no profilers are configured.
+
+!ENTRY org.eclipse.jst.jee 4 0 2015-05-01 23:01:44.272
+!MESSAGE [Working copy] __2F_codingYun_2D_Demo_2F_WebContent_2F_WEB_2D_INF_2F_jsp_2F_index_2E_jsp.java [in <default> [in src [in codingYun-Demo]]] does not exist
+!STACK 1
+Java Model Exception: Java Model Status [[Working copy] __2F_codingYun_2D_Demo_2F_WebContent_2F_WEB_2D_INF_2F_jsp_2F_index_2E_jsp.java [in <default> [in src [in codingYun-Demo]]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newJavaModelException(JavaElement.java:566)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:247)
+	at org.eclipse.jdt.internal.core.SourceRefElement.generateInfos(SourceRefElement.java:107)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:579)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:316)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:302)
+	at org.eclipse.jdt.internal.core.SourceType.isClass(SourceType.java:592)
+	at org.eclipse.jst.jee.model.internal.WebAnnotationReader.analyzeCompilationUnit(WebAnnotationReader.java:126)
+	at org.eclipse.jst.jee.model.internal.WebAnnotationReader.processAddedCompilationUnit(WebAnnotationReader.java:257)
+	at org.eclipse.jst.jee.model.internal.WebAnnotationReader.processChangedCompilationUnit(WebAnnotationReader.java:270)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.recursevilyProcessCompilationUnits(AbstractAnnotationModelProvider.java:553)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.internalPostReconcile(AbstractAnnotationModelProvider.java:466)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.elementChanged(AbstractAnnotationModelProvider.java:446)
+	at org.eclipse.jdt.internal.core.DeltaProcessor$4.run(DeltaProcessor.java:1695)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyListeners(DeltaProcessor.java:1685)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fireReconcileDelta(DeltaProcessor.java:1537)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fire(DeltaProcessor.java:1496)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:770)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5358)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPBatchValidator.validate(JSPBatchValidator.java:528)
+	at org.eclipse.wst.validation.Validator$V2.validate(Validator.java:1159)
+	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:704)
+	at org.eclipse.wst.validation.internal.ValBuilderJob$Visitor.visit(ValBuilderJob.java:351)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:69)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:49)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.deltaBuild(ValBuilderJob.java:211)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.run(ValBuilderJob.java:179)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.runInWorkspace(ValBuilderJob.java:126)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-05-01 23:01:44.272
+!MESSAGE [Working copy] __2F_codingYun_2D_Demo_2F_WebContent_2F_WEB_2D_INF_2F_jsp_2F_index_2E_jsp.java [in <default> [in src [in codingYun-Demo]]] does not exist
+!SESSION 2015-05-02 02:34:22.045 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.7.0_67
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -data E:\workspace -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-05-02 02:35:04.459
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-05-02 02:35:04.503
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\hunter'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-05-02 02:35:22.606
+!MESSAGE An internal error occurred during: "方言重构".
+!STACK 0
+java.lang.NullPointerException
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.getFolderInProject(ScanOperationHelper.java:170)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4FileByExtension(ScanOperationHelper.java:203)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4File(ScanOperationHelper.java:156)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject(ScanOperationHelper.java:53)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.getAllStdTypes(Activator.java:167)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.access$2(Activator.java:166)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator$2.run(Activator.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-05-02 02:35:22.606
+!MESSAGE An internal error occurred during: "方言重构".
+!STACK 0
+java.lang.NullPointerException
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.getFolderInProject(ScanOperationHelper.java:170)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4FileByExtension(ScanOperationHelper.java:203)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4File(ScanOperationHelper.java:156)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject(ScanOperationHelper.java:53)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.getAllStdTypes(Activator.java:167)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.access$2(Activator.java:166)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator$2.run(Activator.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-05-02 02:35:22.616
+!MESSAGE An internal error occurred during: "方言重构".
+!STACK 0
+java.lang.NullPointerException
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.getFolderInProject(ScanOperationHelper.java:170)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4FileByExtension(ScanOperationHelper.java:203)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4File(ScanOperationHelper.java:156)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject(ScanOperationHelper.java:53)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.getAllStdTypes(Activator.java:167)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.access$2(Activator.java:166)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator$2.run(Activator.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-05-02 02:35:22.616
+!MESSAGE An internal error occurred during: "方言重构".
+!STACK 0
+java.lang.NullPointerException
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.getFolderInProject(ScanOperationHelper.java:170)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4FileByExtension(ScanOperationHelper.java:203)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4File(ScanOperationHelper.java:156)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject(ScanOperationHelper.java:53)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.getAllStdTypes(Activator.java:167)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.access$2(Activator.java:166)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator$2.run(Activator.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-05-02 02:35:22.616
+!MESSAGE An internal error occurred during: "方言重构".
+!STACK 0
+java.lang.NullPointerException
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.getFolderInProject(ScanOperationHelper.java:170)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4FileByExtension(ScanOperationHelper.java:203)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4File(ScanOperationHelper.java:156)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject(ScanOperationHelper.java:53)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.getAllStdTypes(Activator.java:167)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.access$2(Activator.java:166)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator$2.run(Activator.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-05-02 02:35:22.616
+!MESSAGE An internal error occurred during: "方言重构".
+!STACK 0
+java.lang.NullPointerException
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.getFolderInProject(ScanOperationHelper.java:170)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4FileByExtension(ScanOperationHelper.java:203)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4File(ScanOperationHelper.java:156)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject(ScanOperationHelper.java:53)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.getAllStdTypes(Activator.java:167)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.access$2(Activator.java:166)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator$2.run(Activator.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-05-02 02:35:22.616
+!MESSAGE An internal error occurred during: "方言重构".
+!STACK 0
+java.lang.NullPointerException
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.getFolderInProject(ScanOperationHelper.java:170)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4FileByExtension(ScanOperationHelper.java:203)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4File(ScanOperationHelper.java:156)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject(ScanOperationHelper.java:53)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.getAllStdTypes(Activator.java:167)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.access$2(Activator.java:166)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator$2.run(Activator.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-05-02 02:35:22.616
+!MESSAGE An internal error occurred during: "方言重构".
+!STACK 0
+java.lang.NullPointerException
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.getFolderInProject(ScanOperationHelper.java:170)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4FileByExtension(ScanOperationHelper.java:203)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4File(ScanOperationHelper.java:156)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject(ScanOperationHelper.java:53)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.getAllStdTypes(Activator.java:167)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.access$2(Activator.java:166)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator$2.run(Activator.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-05-02 02:35:22.616
+!MESSAGE An internal error occurred during: "方言重构".
+!STACK 0
+java.lang.NullPointerException
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.getFolderInProject(ScanOperationHelper.java:170)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4FileByExtension(ScanOperationHelper.java:203)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4File(ScanOperationHelper.java:156)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject(ScanOperationHelper.java:53)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.getAllStdTypes(Activator.java:167)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.access$2(Activator.java:166)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator$2.run(Activator.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-05-02 02:35:22.626
+!MESSAGE An internal error occurred during: "方言重构".
+!STACK 0
+java.lang.NullPointerException
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.getFolderInProject(ScanOperationHelper.java:170)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4FileByExtension(ScanOperationHelper.java:203)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4File(ScanOperationHelper.java:156)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject(ScanOperationHelper.java:53)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.getAllStdTypes(Activator.java:167)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.access$2(Activator.java:166)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator$2.run(Activator.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-05-02 02:35:22.626
+!MESSAGE An internal error occurred during: "方言重构".
+!STACK 0
+java.lang.NullPointerException
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.getFolderInProject(ScanOperationHelper.java:170)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4FileByExtension(ScanOperationHelper.java:203)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4File(ScanOperationHelper.java:156)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject(ScanOperationHelper.java:53)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.getAllStdTypes(Activator.java:167)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.access$2(Activator.java:166)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator$2.run(Activator.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-05-02 02:35:22.626
+!MESSAGE An internal error occurred during: "方言重构".
+!STACK 0
+java.lang.NullPointerException
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.getFolderInProject(ScanOperationHelper.java:170)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4FileByExtension(ScanOperationHelper.java:203)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4File(ScanOperationHelper.java:156)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject(ScanOperationHelper.java:53)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.getAllStdTypes(Activator.java:167)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.access$2(Activator.java:166)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator$2.run(Activator.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-05-02 02:35:22.626
+!MESSAGE An internal error occurred during: "方言重构".
+!STACK 0
+java.lang.NullPointerException
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.getFolderInProject(ScanOperationHelper.java:170)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4FileByExtension(ScanOperationHelper.java:203)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4File(ScanOperationHelper.java:156)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject(ScanOperationHelper.java:53)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.getAllStdTypes(Activator.java:167)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.access$2(Activator.java:166)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator$2.run(Activator.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-05-02 02:35:22.626
+!MESSAGE An internal error occurred during: "方言重构".
+!STACK 0
+java.lang.NullPointerException
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.getFolderInProject(ScanOperationHelper.java:170)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4FileByExtension(ScanOperationHelper.java:203)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4File(ScanOperationHelper.java:156)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject(ScanOperationHelper.java:53)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.getAllStdTypes(Activator.java:167)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.access$2(Activator.java:166)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator$2.run(Activator.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-05-02 02:35:22.626
+!MESSAGE An internal error occurred during: "方言重构".
+!STACK 0
+java.lang.NullPointerException
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.getFolderInProject(ScanOperationHelper.java:170)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4FileByExtension(ScanOperationHelper.java:203)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4File(ScanOperationHelper.java:156)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject(ScanOperationHelper.java:53)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.getAllStdTypes(Activator.java:167)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.access$2(Activator.java:166)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator$2.run(Activator.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-05-02 02:35:22.626
+!MESSAGE An internal error occurred during: "方言重构".
+!STACK 0
+java.lang.NullPointerException
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.getFolderInProject(ScanOperationHelper.java:170)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4FileByExtension(ScanOperationHelper.java:203)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4File(ScanOperationHelper.java:156)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject(ScanOperationHelper.java:53)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.getAllStdTypes(Activator.java:167)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.access$2(Activator.java:166)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator$2.run(Activator.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-05-02 02:35:22.626
+!MESSAGE An internal error occurred during: "方言重构".
+!STACK 0
+java.lang.NullPointerException
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.getFolderInProject(ScanOperationHelper.java:170)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4FileByExtension(ScanOperationHelper.java:203)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4File(ScanOperationHelper.java:156)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject(ScanOperationHelper.java:53)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.getAllStdTypes(Activator.java:167)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.access$2(Activator.java:166)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator$2.run(Activator.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-05-02 02:35:22.626
+!MESSAGE An internal error occurred during: "方言重构".
+!STACK 0
+java.lang.NullPointerException
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.getFolderInProject(ScanOperationHelper.java:170)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4FileByExtension(ScanOperationHelper.java:203)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4File(ScanOperationHelper.java:156)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject(ScanOperationHelper.java:53)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.getAllStdTypes(Activator.java:167)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.access$2(Activator.java:166)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator$2.run(Activator.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-05-02 02:35:22.626
+!MESSAGE An internal error occurred during: "方言重构".
+!STACK 0
+java.lang.NullPointerException
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.getFolderInProject(ScanOperationHelper.java:170)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4FileByExtension(ScanOperationHelper.java:203)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4File(ScanOperationHelper.java:156)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject(ScanOperationHelper.java:53)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.getAllStdTypes(Activator.java:167)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.access$2(Activator.java:166)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator$2.run(Activator.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-05-02 02:35:22.626
+!MESSAGE An internal error occurred during: "方言重构".
+!STACK 0
+java.lang.NullPointerException
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.getFolderInProject(ScanOperationHelper.java:170)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4FileByExtension(ScanOperationHelper.java:203)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4File(ScanOperationHelper.java:156)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject(ScanOperationHelper.java:53)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.getAllStdTypes(Activator.java:167)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.access$2(Activator.java:166)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator$2.run(Activator.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-05-02 02:35:22.637
+!MESSAGE An internal error occurred during: "方言重构".
+!STACK 0
+java.lang.NullPointerException
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.getFolderInProject(ScanOperationHelper.java:170)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4FileByExtension(ScanOperationHelper.java:203)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4File(ScanOperationHelper.java:156)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject(ScanOperationHelper.java:53)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.getAllStdTypes(Activator.java:167)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.access$2(Activator.java:166)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator$2.run(Activator.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-05-02 02:35:22.649
+!MESSAGE An internal error occurred during: "方言重构".
+!STACK 0
+java.lang.NullPointerException
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.getFolderInProject(ScanOperationHelper.java:170)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4FileByExtension(ScanOperationHelper.java:203)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4File(ScanOperationHelper.java:156)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject(ScanOperationHelper.java:53)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.getAllStdTypes(Activator.java:167)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.access$2(Activator.java:166)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator$2.run(Activator.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-05-02 02:35:22.650
+!MESSAGE An internal error occurred during: "方言重构".
+!STACK 0
+java.lang.NullPointerException
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.getFolderInProject(ScanOperationHelper.java:170)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4FileByExtension(ScanOperationHelper.java:203)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4File(ScanOperationHelper.java:156)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject(ScanOperationHelper.java:53)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.getAllStdTypes(Activator.java:167)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.access$2(Activator.java:166)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator$2.run(Activator.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-05-02 02:35:22.651
+!MESSAGE An internal error occurred during: "方言重构".
+!STACK 0
+java.lang.NullPointerException
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.getFolderInProject(ScanOperationHelper.java:170)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4FileByExtension(ScanOperationHelper.java:203)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4File(ScanOperationHelper.java:156)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject(ScanOperationHelper.java:53)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.getAllStdTypes(Activator.java:167)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.access$2(Activator.java:166)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator$2.run(Activator.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-05-02 02:35:22.652
+!MESSAGE An internal error occurred during: "方言重构".
+!STACK 0
+java.lang.NullPointerException
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.getFolderInProject(ScanOperationHelper.java:170)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4FileByExtension(ScanOperationHelper.java:203)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4File(ScanOperationHelper.java:156)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject(ScanOperationHelper.java:53)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.getAllStdTypes(Activator.java:167)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.access$2(Activator.java:166)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator$2.run(Activator.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-05-02 02:35:22.653
+!MESSAGE An internal error occurred during: "方言重构".
+!STACK 0
+java.lang.NullPointerException
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.getFolderInProject(ScanOperationHelper.java:170)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4FileByExtension(ScanOperationHelper.java:203)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4File(ScanOperationHelper.java:156)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject(ScanOperationHelper.java:53)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.getAllStdTypes(Activator.java:167)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.access$2(Activator.java:166)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator$2.run(Activator.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-05-02 02:35:22.657
+!MESSAGE An internal error occurred during: "方言重构".
+!STACK 0
+java.lang.NullPointerException
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.getFolderInProject(ScanOperationHelper.java:170)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4FileByExtension(ScanOperationHelper.java:203)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4File(ScanOperationHelper.java:156)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject(ScanOperationHelper.java:53)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.getAllStdTypes(Activator.java:167)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.access$2(Activator.java:166)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator$2.run(Activator.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-05-02 02:35:22.659
+!MESSAGE An internal error occurred during: "方言重构".
+!STACK 0
+java.lang.NullPointerException
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.getFolderInProject(ScanOperationHelper.java:170)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4FileByExtension(ScanOperationHelper.java:203)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4File(ScanOperationHelper.java:156)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject(ScanOperationHelper.java:53)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.getAllStdTypes(Activator.java:167)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.access$2(Activator.java:166)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator$2.run(Activator.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-05-02 02:35:22.661
+!MESSAGE An internal error occurred during: "方言重构".
+!STACK 0
+java.lang.NullPointerException
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.getFolderInProject(ScanOperationHelper.java:170)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4FileByExtension(ScanOperationHelper.java:203)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4File(ScanOperationHelper.java:156)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject(ScanOperationHelper.java:53)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.getAllStdTypes(Activator.java:167)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.access$2(Activator.java:166)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator$2.run(Activator.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-05-02 02:35:22.665
+!MESSAGE An internal error occurred during: "方言重构".
+!STACK 0
+java.lang.NullPointerException
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.getFolderInProject(ScanOperationHelper.java:170)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4FileByExtension(ScanOperationHelper.java:203)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4File(ScanOperationHelper.java:156)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject(ScanOperationHelper.java:53)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.getAllStdTypes(Activator.java:167)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.access$2(Activator.java:166)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator$2.run(Activator.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-05-02 02:35:22.668
+!MESSAGE An internal error occurred during: "方言重构".
+!STACK 0
+java.lang.NullPointerException
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.getFolderInProject(ScanOperationHelper.java:170)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4FileByExtension(ScanOperationHelper.java:203)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4File(ScanOperationHelper.java:156)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject(ScanOperationHelper.java:53)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.getAllStdTypes(Activator.java:167)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.access$2(Activator.java:166)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator$2.run(Activator.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-05-02 02:35:22.669
+!MESSAGE An internal error occurred during: "方言重构".
+!STACK 0
+java.lang.NullPointerException
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.getFolderInProject(ScanOperationHelper.java:170)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4FileByExtension(ScanOperationHelper.java:203)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4File(ScanOperationHelper.java:156)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject(ScanOperationHelper.java:53)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.getAllStdTypes(Activator.java:167)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.access$2(Activator.java:166)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator$2.run(Activator.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-05-02 02:35:22.670
+!MESSAGE An internal error occurred during: "方言重构".
+!STACK 0
+java.lang.NullPointerException
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.getFolderInProject(ScanOperationHelper.java:170)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4FileByExtension(ScanOperationHelper.java:203)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4File(ScanOperationHelper.java:156)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject(ScanOperationHelper.java:53)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.getAllStdTypes(Activator.java:167)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.access$2(Activator.java:166)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator$2.run(Activator.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-05-02 02:35:22.672
+!MESSAGE An internal error occurred during: "方言重构".
+!STACK 0
+java.lang.NullPointerException
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.getFolderInProject(ScanOperationHelper.java:170)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4FileByExtension(ScanOperationHelper.java:203)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4File(ScanOperationHelper.java:156)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject(ScanOperationHelper.java:53)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.getAllStdTypes(Activator.java:167)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.access$2(Activator.java:166)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator$2.run(Activator.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-05-02 02:35:22.677
+!MESSAGE An internal error occurred during: "方言重构".
+!STACK 0
+java.lang.NullPointerException
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.getFolderInProject(ScanOperationHelper.java:170)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4FileByExtension(ScanOperationHelper.java:203)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4File(ScanOperationHelper.java:156)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject(ScanOperationHelper.java:53)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.getAllStdTypes(Activator.java:167)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.access$2(Activator.java:166)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator$2.run(Activator.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-05-02 02:35:22.680
+!MESSAGE An internal error occurred during: "方言重构".
+!STACK 0
+java.lang.NullPointerException
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.getFolderInProject(ScanOperationHelper.java:170)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4FileByExtension(ScanOperationHelper.java:203)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4File(ScanOperationHelper.java:156)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject(ScanOperationHelper.java:53)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.getAllStdTypes(Activator.java:167)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.access$2(Activator.java:166)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator$2.run(Activator.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-05-02 02:35:22.681
+!MESSAGE An internal error occurred during: "方言重构".
+!STACK 0
+java.lang.NullPointerException
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.getFolderInProject(ScanOperationHelper.java:170)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4FileByExtension(ScanOperationHelper.java:203)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4File(ScanOperationHelper.java:156)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject(ScanOperationHelper.java:53)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.getAllStdTypes(Activator.java:167)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.access$2(Activator.java:166)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator$2.run(Activator.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-05-02 02:35:22.681
+!MESSAGE An internal error occurred during: "方言重构".
+!STACK 0
+java.lang.NullPointerException
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.getFolderInProject(ScanOperationHelper.java:170)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4FileByExtension(ScanOperationHelper.java:203)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4File(ScanOperationHelper.java:156)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject(ScanOperationHelper.java:53)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.getAllStdTypes(Activator.java:167)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.access$2(Activator.java:166)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator$2.run(Activator.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-05-02 02:35:22.683
+!MESSAGE An internal error occurred during: "方言重构".
+!STACK 0
+java.lang.NullPointerException
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.getFolderInProject(ScanOperationHelper.java:170)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4FileByExtension(ScanOperationHelper.java:203)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4File(ScanOperationHelper.java:156)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject(ScanOperationHelper.java:53)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.getAllStdTypes(Activator.java:167)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.access$2(Activator.java:166)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator$2.run(Activator.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.ui 4 4 2015-05-02 02:35:24.770
+!MESSAGE Unable to create part
+
+!ENTRY org.eclipse.core.filebuffers 4 0 2015-05-02 02:35:24.770
+!MESSAGE Cannot determine URI for '/codingYun-Demo/src/com/codingyun/core/action/IndexController.java'.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Cannot determine URI for '/codingYun-Demo/src/com/codingyun/core/action/IndexController.java'.
+	at org.eclipse.core.internal.filebuffers.ResourceFileBuffer.create(ResourceFileBuffer.java:238)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager.connect(TextFileBufferManager.java:112)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.createFileInfo(TextFileDocumentProvider.java:559)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitDocumentProvider.createFileInfo(CompilationUnitDocumentProvider.java:980)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.connect(TextFileDocumentProvider.java:478)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitDocumentProvider.connect(CompilationUnitDocumentProvider.java:1244)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.doSetInput(AbstractTextEditor.java:4233)
+	at org.eclipse.ui.texteditor.StatusTextEditor.doSetInput(StatusTextEditor.java:237)
+	at org.eclipse.ui.texteditor.AbstractDecoratedTextEditor.doSetInput(AbstractDecoratedTextEditor.java:1480)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaEditor.internalDoSetInput(JavaEditor.java:2584)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaEditor.doSetInput(JavaEditor.java:2557)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor.doSetInput(CompilationUnitEditor.java:1395)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$19.run(AbstractTextEditor.java:3220)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:466)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:374)
+	at org.eclipse.ui.internal.WorkbenchWindow$13.run(WorkbenchWindow.java:2157)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2153)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.internalInit(AbstractTextEditor.java:3238)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.init(AbstractTextEditor.java:3265)
+	at org.eclipse.ui.internal.EditorReference.initialize(EditorReference.java:390)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:305)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:888)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:869)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:120)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:337)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:258)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:162)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:104)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:55)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:127)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:983)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1246)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer$1.handleEvent(LazyStackRenderer.java:69)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$1.run(UIEventHandler.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:187)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:156)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4734)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:218)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:36)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:81)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:59)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:171)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.hidePart(PartServiceImpl.java:1262)
+	at org.eclipse.ui.internal.WorkbenchPage.hidePart(WorkbenchPage.java:1599)
+	at org.eclipse.ui.internal.WorkbenchPage.hidePart(WorkbenchPage.java:1550)
+	at org.eclipse.ui.internal.WorkbenchPage.closeEditors(WorkbenchPage.java:1520)
+	at org.eclipse.ui.internal.WorkbenchPage.closeEditor(WorkbenchPage.java:1645)
+	at org.eclipse.wst.sse.ui.StructuredTextEditor$9.run(StructuredTextEditor.java:1229)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+!SUBENTRY 1 org.eclipse.core.filebuffers 4 0 2015-05-02 02:35:24.780
+!MESSAGE Cannot determine URI for '/codingYun-Demo/src/com/codingyun/core/action/IndexController.java'.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:42:52.906
+!MESSAGE Failed to dispatch repository event to org.eclipse.m2e.core.internal.embedder.EclipseRepositoryListener: null
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:42:53.594
+!MESSAGE The POM for org.tinygroup:org.tinygroup.jspengine:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:42:53.604
+!MESSAGE The POM for org.tinygroup:org.tinygroup.validate:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:42:53.614
+!MESSAGE The POM for org.tinygroup:org.tinygroup.templateweblayer:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:42:53.624
+!MESSAGE The POM for org.tinygroup:org.tinygroup.serviceprocessor:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:42:53.634
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowprocessor:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:42:53.654
+!MESSAGE The POM for org.tinygroup:org.tinygroup.cepcorenetty:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:42:53.664
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowbasicservice:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:42:53.674
+!MESSAGE The POM for org.tinygroup:org.tinygroup.cepcorebasicservice:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:42:53.684
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowplugin:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:42:53.694
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowservicecomponent:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:42:53.704
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowbasiccomponent:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:42:53.714
+!MESSAGE The POM for org.tinygroup:org.tinygroup.jcscache:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:42:53.734
+!MESSAGE The POM for org.tinygroup:org.tinygroup.dbfilter:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:42:53.748
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobyannotation:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:42:53.759
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobyxml:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:42:53.766
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobyflow:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:42:53.776
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobymvc:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:12.487
+!MESSAGE The POM for org.tinygroup:org.tinygroup.jspengine:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:12.495
+!MESSAGE The POM for org.tinygroup:org.tinygroup.validate:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:12.505
+!MESSAGE The POM for org.tinygroup:org.tinygroup.templateweblayer:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:12.515
+!MESSAGE The POM for org.tinygroup:org.tinygroup.serviceprocessor:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:12.525
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowprocessor:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:12.535
+!MESSAGE The POM for org.tinygroup:org.tinygroup.cepcorenetty:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:12.545
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowbasicservice:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:12.555
+!MESSAGE The POM for org.tinygroup:org.tinygroup.cepcorebasicservice:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:12.565
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowplugin:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:12.575
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowservicecomponent:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:12.585
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowbasiccomponent:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:12.595
+!MESSAGE The POM for org.tinygroup:org.tinygroup.jcscache:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:12.631
+!MESSAGE The POM for org.tinygroup:org.tinygroup.dbfilter:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:12.651
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobyannotation:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:12.667
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobyxml:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:12.678
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobyflow:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:12.687
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobymvc:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:15.702
+!MESSAGE The POM for org.tinygroup:org.tinygroup.jspengine:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:15.717
+!MESSAGE The POM for org.tinygroup:org.tinygroup.validate:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:15.742
+!MESSAGE The POM for org.tinygroup:org.tinygroup.templateweblayer:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:15.761
+!MESSAGE The POM for org.tinygroup:org.tinygroup.serviceprocessor:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:15.792
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowprocessor:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:15.811
+!MESSAGE The POM for org.tinygroup:org.tinygroup.cepcorenetty:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:15.830
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowbasicservice:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:15.852
+!MESSAGE The POM for org.tinygroup:org.tinygroup.cepcorebasicservice:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:15.863
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowplugin:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:15.873
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowservicecomponent:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:15.883
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowbasiccomponent:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:15.893
+!MESSAGE The POM for org.tinygroup:org.tinygroup.jcscache:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:15.913
+!MESSAGE The POM for org.tinygroup:org.tinygroup.dbfilter:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:15.923
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobyannotation:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:15.933
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobyxml:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:15.943
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobyflow:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:15.953
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobymvc:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:17.101
+!MESSAGE The POM for org.tinygroup:org.tinygroup.jspengine:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:17.111
+!MESSAGE The POM for org.tinygroup:org.tinygroup.validate:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:17.131
+!MESSAGE The POM for org.tinygroup:org.tinygroup.templateweblayer:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:17.141
+!MESSAGE The POM for org.tinygroup:org.tinygroup.serviceprocessor:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:17.151
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowprocessor:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:17.171
+!MESSAGE The POM for org.tinygroup:org.tinygroup.cepcorenetty:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:17.181
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowbasicservice:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:17.191
+!MESSAGE The POM for org.tinygroup:org.tinygroup.cepcorebasicservice:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:17.211
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowplugin:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:17.221
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowservicecomponent:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:17.241
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowbasiccomponent:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:17.254
+!MESSAGE The POM for org.tinygroup:org.tinygroup.jcscache:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:17.263
+!MESSAGE The POM for org.tinygroup:org.tinygroup.dbfilter:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:17.273
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobyannotation:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:17.283
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobyxml:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:17.303
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobyflow:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:17.313
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobymvc:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:17.563
+!MESSAGE The POM for org.tinygroup:org.tinygroup.jspengine:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:17.573
+!MESSAGE The POM for org.tinygroup:org.tinygroup.validate:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:17.583
+!MESSAGE The POM for org.tinygroup:org.tinygroup.templateweblayer:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:17.593
+!MESSAGE The POM for org.tinygroup:org.tinygroup.serviceprocessor:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:17.613
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowprocessor:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:17.636
+!MESSAGE The POM for org.tinygroup:org.tinygroup.cepcorenetty:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:17.655
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowbasicservice:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:17.672
+!MESSAGE The POM for org.tinygroup:org.tinygroup.cepcorebasicservice:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:17.682
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowplugin:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:17.696
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowservicecomponent:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:17.713
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowbasiccomponent:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:17.729
+!MESSAGE The POM for org.tinygroup:org.tinygroup.jcscache:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:17.752
+!MESSAGE The POM for org.tinygroup:org.tinygroup.dbfilter:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:17.766
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobyannotation:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:17.782
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobyxml:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:17.795
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobyflow:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:17.810
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobymvc:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:18.175
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:18.225
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:39.559
+!MESSAGE The POM for org.tinygroup:org.tinygroup.jspengine:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:39.569
+!MESSAGE The POM for org.tinygroup:org.tinygroup.validate:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:39.589
+!MESSAGE The POM for org.tinygroup:org.tinygroup.templateweblayer:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:39.599
+!MESSAGE The POM for org.tinygroup:org.tinygroup.serviceprocessor:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:39.609
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowprocessor:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:39.629
+!MESSAGE The POM for org.tinygroup:org.tinygroup.cepcorenetty:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:39.639
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowbasicservice:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:39.659
+!MESSAGE The POM for org.tinygroup:org.tinygroup.cepcorebasicservice:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:39.678
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowplugin:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:39.691
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowservicecomponent:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:39.708
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowbasiccomponent:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:39.723
+!MESSAGE The POM for org.tinygroup:org.tinygroup.jcscache:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:39.737
+!MESSAGE The POM for org.tinygroup:org.tinygroup.dbfilter:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:39.750
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobyannotation:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:39.780
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobyxml:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:39.803
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobyflow:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:43:39.816
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobymvc:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:45:58.360
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:45:58.360
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:21.758
+!MESSAGE The POM for org.tinygroup:org.tinygroup.jspengine:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:21.768
+!MESSAGE The POM for org.tinygroup:org.tinygroup.validate:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:21.790
+!MESSAGE The POM for org.tinygroup:org.tinygroup.templateweblayer:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:21.803
+!MESSAGE The POM for org.tinygroup:org.tinygroup.serviceprocessor:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:21.816
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowprocessor:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:21.830
+!MESSAGE The POM for org.tinygroup:org.tinygroup.cepcorenetty:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:21.840
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowbasicservice:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:21.850
+!MESSAGE The POM for org.tinygroup:org.tinygroup.cepcorebasicservice:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:21.860
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowplugin:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:21.870
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowservicecomponent:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:21.890
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowbasiccomponent:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:21.900
+!MESSAGE The POM for org.tinygroup:org.tinygroup.jcscache:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:21.920
+!MESSAGE The POM for org.tinygroup:org.tinygroup.dbfilter:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:21.930
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobyannotation:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:21.950
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobyxml:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:21.976
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobyflow:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:21.990
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobymvc:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:22.151
+!MESSAGE The POM for org.tinygroup:org.tinygroup.jspengine:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:22.160
+!MESSAGE The POM for org.tinygroup:org.tinygroup.validate:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:22.162
+!MESSAGE The POM for org.tinygroup:org.tinygroup.templateweblayer:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:22.172
+!MESSAGE The POM for org.tinygroup:org.tinygroup.serviceprocessor:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:22.182
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowprocessor:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:22.192
+!MESSAGE The POM for org.tinygroup:org.tinygroup.cepcorenetty:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:22.202
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowbasicservice:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:22.212
+!MESSAGE The POM for org.tinygroup:org.tinygroup.cepcorebasicservice:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:22.222
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowplugin:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:22.232
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowservicecomponent:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:22.242
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowbasiccomponent:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:22.252
+!MESSAGE The POM for org.tinygroup:org.tinygroup.jcscache:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:22.262
+!MESSAGE The POM for org.tinygroup:org.tinygroup.dbfilter:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:22.272
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobyannotation:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:22.282
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobyxml:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:22.292
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobyflow:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:22.302
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobymvc:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:23.285
+!MESSAGE The POM for org.tinygroup:org.tinygroup.jspengine:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:23.297
+!MESSAGE The POM for org.tinygroup:org.tinygroup.validate:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:23.310
+!MESSAGE The POM for org.tinygroup:org.tinygroup.templateweblayer:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:23.321
+!MESSAGE The POM for org.tinygroup:org.tinygroup.serviceprocessor:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:23.332
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowprocessor:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:23.343
+!MESSAGE The POM for org.tinygroup:org.tinygroup.cepcorenetty:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:23.351
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowbasicservice:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:23.360
+!MESSAGE The POM for org.tinygroup:org.tinygroup.cepcorebasicservice:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:23.369
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowplugin:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:23.377
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowservicecomponent:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:23.384
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowbasiccomponent:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:23.393
+!MESSAGE The POM for org.tinygroup:org.tinygroup.jcscache:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:23.401
+!MESSAGE The POM for org.tinygroup:org.tinygroup.dbfilter:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:23.408
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobyannotation:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:23.420
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobyxml:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:23.438
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobyflow:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:23.447
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobymvc:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:23.880
+!MESSAGE The POM for org.tinygroup:org.tinygroup.jspengine:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:23.890
+!MESSAGE The POM for org.tinygroup:org.tinygroup.validate:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:23.900
+!MESSAGE The POM for org.tinygroup:org.tinygroup.templateweblayer:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:23.910
+!MESSAGE The POM for org.tinygroup:org.tinygroup.serviceprocessor:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:23.918
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowprocessor:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:23.925
+!MESSAGE The POM for org.tinygroup:org.tinygroup.cepcorenetty:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:23.950
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowbasicservice:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:23.982
+!MESSAGE The POM for org.tinygroup:org.tinygroup.cepcorebasicservice:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:23.992
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowplugin:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:24.002
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowservicecomponent:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:24.012
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowbasiccomponent:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:24.012
+!MESSAGE The POM for org.tinygroup:org.tinygroup.jcscache:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:24.022
+!MESSAGE The POM for org.tinygroup:org.tinygroup.dbfilter:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:24.032
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobyannotation:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:24.042
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobyxml:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:24.052
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobyflow:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:24.062
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobymvc:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:24.164
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:46:24.174
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-05-02 02:47:58.359
+!MESSAGE Could not download sources for org.tinygroup:org.tinygroup.jspengine:1.2.0-SNAPSHOT
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-05-02 02:47:58.369
+!MESSAGE Could not download sources for org.tinygroup:org.tinygroup.validate:1.2.0-SNAPSHOT
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-05-02 02:47:58.379
+!MESSAGE Could not download sources for org.tinygroup:org.tinygroup.templateweblayer:1.2.0-SNAPSHOT
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-05-02 02:47:58.399
+!MESSAGE Could not download sources for org.tinygroup:org.tinygroup.serviceprocessor:1.2.0-SNAPSHOT
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-05-02 02:47:58.410
+!MESSAGE Could not download sources for org.tinygroup:org.tinygroup.flowprocessor:1.2.0-SNAPSHOT
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-05-02 02:47:58.422
+!MESSAGE Could not download sources for org.tinygroup:org.tinygroup.cepcorenetty:1.2.0-SNAPSHOT
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-05-02 02:47:58.435
+!MESSAGE Could not download sources for org.tinygroup:org.tinygroup.flowbasicservice:1.2.0-SNAPSHOT
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-05-02 02:47:58.465
+!MESSAGE Could not download sources for org.tinygroup:org.tinygroup.cepcorebasicservice:1.2.0-SNAPSHOT
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-05-02 02:47:58.476
+!MESSAGE Could not download sources for org.tinygroup:org.tinygroup.flowplugin:1.2.0-SNAPSHOT
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-05-02 02:47:58.488
+!MESSAGE Could not download sources for org.tinygroup:org.tinygroup.flowservicecomponent:1.2.0-SNAPSHOT
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-05-02 02:47:58.499
+!MESSAGE Could not download sources for org.tinygroup:org.tinygroup.flowbasiccomponent:1.2.0-SNAPSHOT
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-05-02 02:47:58.511
+!MESSAGE Could not download sources for org.tinygroup:org.tinygroup.jcscache:1.2.0-SNAPSHOT
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-05-02 02:47:58.521
+!MESSAGE Could not download sources for org.tinygroup:org.tinygroup.dbfilter:1.2.0-SNAPSHOT
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-05-02 02:47:58.531
+!MESSAGE Could not download sources for org.tinygroup:org.tinygroup.hellobyannotation:1.2.0-SNAPSHOT
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-05-02 02:47:58.541
+!MESSAGE Could not download sources for org.tinygroup:org.tinygroup.hellobyxml:1.2.0-SNAPSHOT
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-05-02 02:47:58.551
+!MESSAGE Could not download sources for org.tinygroup:org.tinygroup.hellobyflow:1.2.0-SNAPSHOT
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-05-02 02:47:58.561
+!MESSAGE Could not download sources for org.tinygroup:org.tinygroup.hellobymvc:1.2.0-SNAPSHOT
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:48:01.265
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 02:48:01.265
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 03:03:34.578
+!MESSAGE Failure to transfer org.tinygroup:TinySample:1.2.2-SNAPSHOT/maven-metadata.xml from http://www.tinygroup.org/nexus/content/repositories/snapshots/ was cached in the local repository, resolution will not be reattempted until the update interval of tinyrepositorysnapshot has elapsed or updates are forced. Original error: Could not transfer metadata org.tinygroup:TinySample:1.2.2-SNAPSHOT/maven-metadata.xml from/to tinyrepositorysnapshot (http://www.tinygroup.org/nexus/content/repositories/snapshots/): Not authorized , ReasonPhrase:Unauthorized.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 03:03:34.819
+!MESSAGE Failure to transfer org.tinygroup:TinySample:1.2.2-SNAPSHOT/maven-metadata.xml from http://www.tinygroup.org/nexus/content/repositories/snapshots/ was cached in the local repository, resolution will not be reattempted until the update interval of tinyrepositorysnapshot has elapsed or updates are forced. Original error: Could not transfer metadata org.tinygroup:TinySample:1.2.2-SNAPSHOT/maven-metadata.xml from/to tinyrepositorysnapshot (http://www.tinygroup.org/nexus/content/repositories/snapshots/): Not authorized , ReasonPhrase:Unauthorized.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 03:03:35.701
+!MESSAGE Failure to transfer org.tinygroup:TinySample:1.2.2-SNAPSHOT/maven-metadata.xml from http://www.tinygroup.org/nexus/content/repositories/snapshots/ was cached in the local repository, resolution will not be reattempted until the update interval of tinyrepositorysnapshot has elapsed or updates are forced. Original error: Could not transfer metadata org.tinygroup:TinySample:1.2.2-SNAPSHOT/maven-metadata.xml from/to tinyrepositorysnapshot (http://www.tinygroup.org/nexus/content/repositories/snapshots/): Not authorized , ReasonPhrase:Unauthorized.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-02 03:04:03.593
+!MESSAGE Failure to transfer org.tinygroup:TinySample:1.2.2-SNAPSHOT/maven-metadata.xml from http://www.tinygroup.org/nexus/content/repositories/snapshots/ was cached in the local repository, resolution will not be reattempted until the update interval of tinyrepositorysnapshot has elapsed or updates are forced. Original error: Could not transfer metadata org.tinygroup:TinySample:1.2.2-SNAPSHOT/maven-metadata.xml from/to tinyrepositorysnapshot (http://www.tinygroup.org/nexus/content/repositories/snapshots/): Not authorized , ReasonPhrase:Unauthorized.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2015-05-02 03:04:03.593
+!MESSAGE Failed to read Maven project: 1 problem was encountered while building the effective model for org.tinygroup:org.tinygroup.websample:1.2.2-SNAPSHOT
+[FATAL] Non-resolvable parent POM: Failure to transfer org.tinygroup:TinySample:pom:1.2.2-SNAPSHOT from http://www.tinygroup.org/nexus/content/repositories/snapshots/ was cached in the local repository, resolution will not be reattempted until the update interval of tinyrepositorysnapshot has elapsed or updates are forced. Original error: Could not transfer artifact org.tinygroup:TinySample:pom:1.2.2-SNAPSHOT from/to tinyrepositorysnapshot (http://www.tinygroup.org/nexus/content/repositories/snapshots/): Not authorized , ReasonPhrase:Unauthorized. and 'parent.relativePath' points at wrong local POM @ line 5, column 10
+ for project org.tinygroup:org.tinygroup.websample:1.2.2-SNAPSHOT at E:\Store\websample\pom.xml
+
+!ENTRY org.eclipse.wst.common.frameworks 4 0 2015-05-02 03:05:36.459
+!MESSAGE Error exportingC:/Users/hunter/Desktop/webpanda.war
+!STACK 0
+org.eclipse.core.commands.ExecutionException: Error exportingC:/Users/hunter/Desktop/webpanda.war
+	at org.eclipse.jst.j2ee.internal.archive.operations.ComponentExportOperation.execute(ComponentExportOperation.java:150)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl$1.run(DataModelPausibleOperationImpl.java:385)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.runOperation(DataModelPausibleOperationImpl.java:410)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.runOperation(DataModelPausibleOperationImpl.java:360)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.doExecute(DataModelPausibleOperationImpl.java:247)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.executeImpl(DataModelPausibleOperationImpl.java:219)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.cacheThreadAndContinue(DataModelPausibleOperationImpl.java:89)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.execute(DataModelPausibleOperationImpl.java:207)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.ui.DataModelWizard$1CatchThrowableRunnableWithProgress.run(DataModelWizard.java:220)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.jst.jee.archive.ArchiveSaveFailureException: org.eclipse.jst.j2ee.internal.archive.operations.FlatComponentArchiver$UnderlyingFileNotFoundException: Cannot find the file C:\Users\hunter\.m2\repository\org\tinygroup\org.tinygroup.jspengine\1.2.0-SNAPSHOT\org.tinygroup.jspengine-1.2.0-SNAPSHOT.jar in the file system. Make sure the file exists and try the operation again
+	at org.eclipse.jst.j2ee.internal.archive.operations.FlatComponentArchiver.saveArchive(FlatComponentArchiver.java:126)
+	at org.eclipse.jst.j2ee.internal.archive.operations.ComponentExportOperation.export(ComponentExportOperation.java:193)
+	at org.eclipse.jst.j2ee.internal.archive.operations.ComponentExportOperation.execute(ComponentExportOperation.java:136)
+	... 10 more
+Caused by: org.eclipse.jst.j2ee.internal.archive.operations.FlatComponentArchiver$UnderlyingFileNotFoundException: Cannot find the file C:\Users\hunter\.m2\repository\org\tinygroup\org.tinygroup.jspengine\1.2.0-SNAPSHOT\org.tinygroup.jspengine-1.2.0-SNAPSHOT.jar in the file system. Make sure the file exists and try the operation again
+	at org.eclipse.jst.j2ee.internal.archive.operations.FlatComponentArchiver.addZipEntry(FlatComponentArchiver.java:258)
+	at org.eclipse.jst.j2ee.internal.archive.operations.FlatComponentArchiver.saveFlatResources(FlatComponentArchiver.java:158)
+	at org.eclipse.jst.j2ee.internal.archive.operations.FlatComponentArchiver.saveFlatResources(FlatComponentArchiver.java:165)
+	at org.eclipse.jst.j2ee.internal.archive.operations.FlatComponentArchiver.saveFlatResources(FlatComponentArchiver.java:165)
+	at org.eclipse.jst.j2ee.internal.archive.operations.FlatComponentArchiver.saveArchive(FlatComponentArchiver.java:115)
+	... 12 more
+
+!ENTRY org.eclipse.wst.common.frameworks 4 0 2015-05-02 03:05:36.489
+!MESSAGE Extended Operation failure: org.eclipse.jst.j2ee.internal.archive.operations.JavaEEComponentExportOperation
+!STACK 0
+org.eclipse.core.commands.ExecutionException: Error exportingC:/Users/hunter/Desktop/webpanda.war
+	at org.eclipse.jst.j2ee.internal.archive.operations.ComponentExportOperation.execute(ComponentExportOperation.java:150)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl$1.run(DataModelPausibleOperationImpl.java:385)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.runOperation(DataModelPausibleOperationImpl.java:410)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.runOperation(DataModelPausibleOperationImpl.java:360)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.doExecute(DataModelPausibleOperationImpl.java:247)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.executeImpl(DataModelPausibleOperationImpl.java:219)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.cacheThreadAndContinue(DataModelPausibleOperationImpl.java:89)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.execute(DataModelPausibleOperationImpl.java:207)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.ui.DataModelWizard$1CatchThrowableRunnableWithProgress.run(DataModelWizard.java:220)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.jst.jee.archive.ArchiveSaveFailureException: org.eclipse.jst.j2ee.internal.archive.operations.FlatComponentArchiver$UnderlyingFileNotFoundException: Cannot find the file C:\Users\hunter\.m2\repository\org\tinygroup\org.tinygroup.jspengine\1.2.0-SNAPSHOT\org.tinygroup.jspengine-1.2.0-SNAPSHOT.jar in the file system. Make sure the file exists and try the operation again
+	at org.eclipse.jst.j2ee.internal.archive.operations.FlatComponentArchiver.saveArchive(FlatComponentArchiver.java:126)
+	at org.eclipse.jst.j2ee.internal.archive.operations.ComponentExportOperation.export(ComponentExportOperation.java:193)
+	at org.eclipse.jst.j2ee.internal.archive.operations.ComponentExportOperation.execute(ComponentExportOperation.java:136)
+	... 10 more
+Caused by: org.eclipse.jst.j2ee.internal.archive.operations.FlatComponentArchiver$UnderlyingFileNotFoundException: Cannot find the file C:\Users\hunter\.m2\repository\org\tinygroup\org.tinygroup.jspengine\1.2.0-SNAPSHOT\org.tinygroup.jspengine-1.2.0-SNAPSHOT.jar in the file system. Make sure the file exists and try the operation again
+	at org.eclipse.jst.j2ee.internal.archive.operations.FlatComponentArchiver.addZipEntry(FlatComponentArchiver.java:258)
+	at org.eclipse.jst.j2ee.internal.archive.operations.FlatComponentArchiver.saveFlatResources(FlatComponentArchiver.java:158)
+	at org.eclipse.jst.j2ee.internal.archive.operations.FlatComponentArchiver.saveFlatResources(FlatComponentArchiver.java:165)
+	at org.eclipse.jst.j2ee.internal.archive.operations.FlatComponentArchiver.saveFlatResources(FlatComponentArchiver.java:165)
+	at org.eclipse.jst.j2ee.internal.archive.operations.FlatComponentArchiver.saveArchive(FlatComponentArchiver.java:115)
+	... 12 more
+!SUBENTRY 1 org.eclipse.wst.common.frameworks 4 0 2015-05-02 03:05:36.489
+!MESSAGE Extended Operation failure: org.eclipse.jst.j2ee.internal.archive.operations.JavaEEComponentExportOperation
+!STACK 0
+org.eclipse.core.commands.ExecutionException: Error exportingC:/Users/hunter/Desktop/webpanda.war
+	at org.eclipse.jst.j2ee.internal.archive.operations.ComponentExportOperation.execute(ComponentExportOperation.java:150)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl$1.run(DataModelPausibleOperationImpl.java:385)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.runOperation(DataModelPausibleOperationImpl.java:410)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.runOperation(DataModelPausibleOperationImpl.java:360)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.doExecute(DataModelPausibleOperationImpl.java:247)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.executeImpl(DataModelPausibleOperationImpl.java:219)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.cacheThreadAndContinue(DataModelPausibleOperationImpl.java:89)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.DataModelPausibleOperationImpl.execute(DataModelPausibleOperationImpl.java:207)
+	at org.eclipse.wst.common.frameworks.internal.datamodel.ui.DataModelWizard$1CatchThrowableRunnableWithProgress.run(DataModelWizard.java:220)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.jst.jee.archive.ArchiveSaveFailureException: org.eclipse.jst.j2ee.internal.archive.operations.FlatComponentArchiver$UnderlyingFileNotFoundException: Cannot find the file C:\Users\hunter\.m2\repository\org\tinygroup\org.tinygroup.jspengine\1.2.0-SNAPSHOT\org.tinygroup.jspengine-1.2.0-SNAPSHOT.jar in the file system. Make sure the file exists and try the operation again
+	at org.eclipse.jst.j2ee.internal.archive.operations.FlatComponentArchiver.saveArchive(FlatComponentArchiver.java:126)
+	at org.eclipse.jst.j2ee.internal.archive.operations.ComponentExportOperation.export(ComponentExportOperation.java:193)
+	at org.eclipse.jst.j2ee.internal.archive.operations.ComponentExportOperation.execute(ComponentExportOperation.java:136)
+	... 10 more
+Caused by: org.eclipse.jst.j2ee.internal.archive.operations.FlatComponentArchiver$UnderlyingFileNotFoundException: Cannot find the file C:\Users\hunter\.m2\repository\org\tinygroup\org.tinygroup.jspengine\1.2.0-SNAPSHOT\org.tinygroup.jspengine-1.2.0-SNAPSHOT.jar in the file system. Make sure the file exists and try the operation again
+	at org.eclipse.jst.j2ee.internal.archive.operations.FlatComponentArchiver.addZipEntry(FlatComponentArchiver.java:258)
+	at org.eclipse.jst.j2ee.internal.archive.operations.FlatComponentArchiver.saveFlatResources(FlatComponentArchiver.java:158)
+	at org.eclipse.jst.j2ee.internal.archive.operations.FlatComponentArchiver.saveFlatResources(FlatComponentArchiver.java:165)
+	at org.eclipse.jst.j2ee.internal.archive.operations.FlatComponentArchiver.saveFlatResources(FlatComponentArchiver.java:165)
+	at org.eclipse.jst.j2ee.internal.archive.operations.FlatComponentArchiver.saveArchive(FlatComponentArchiver.java:115)
+	... 12 more
+!SESSION 2015-05-10 12:58:38.088 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.7.0_67
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-10 12:59:36.150
+!MESSAGE The POM for org.tinygroup:org.tinygroup.jspengine:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-10 12:59:36.270
+!MESSAGE The POM for org.tinygroup:org.tinygroup.validate:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-10 12:59:36.280
+!MESSAGE The POM for org.tinygroup:org.tinygroup.templateweblayer:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-10 12:59:36.300
+!MESSAGE The POM for org.tinygroup:org.tinygroup.serviceprocessor:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-10 12:59:36.310
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowprocessor:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-10 12:59:36.320
+!MESSAGE The POM for org.tinygroup:org.tinygroup.cepcorenetty:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-10 12:59:36.382
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowbasicservice:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-10 12:59:36.402
+!MESSAGE The POM for org.tinygroup:org.tinygroup.cepcorebasicservice:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-10 12:59:36.439
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowplugin:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-10 12:59:36.454
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowservicecomponent:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-10 12:59:36.464
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowbasiccomponent:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-10 12:59:36.474
+!MESSAGE The POM for org.tinygroup:org.tinygroup.jcscache:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-10 12:59:36.484
+!MESSAGE The POM for org.tinygroup:org.tinygroup.dbfilter:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-10 12:59:36.494
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobyannotation:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-10 12:59:36.514
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobyxml:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-10 12:59:36.524
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobyflow:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-10 12:59:36.534
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobymvc:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-05-10 12:59:50.383
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-05-10 12:59:50.383
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\hunter'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-10 12:59:59.729
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-10 12:59:59.809
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+!SESSION 2015-05-10 19:49:10.504 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.7.0_67
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-10 19:50:01.527
+!MESSAGE The POM for org.tinygroup:org.tinygroup.jspengine:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-10 19:50:01.605
+!MESSAGE The POM for org.tinygroup:org.tinygroup.validate:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-10 19:50:01.615
+!MESSAGE The POM for org.tinygroup:org.tinygroup.templateweblayer:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-10 19:50:01.625
+!MESSAGE The POM for org.tinygroup:org.tinygroup.serviceprocessor:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-10 19:50:01.635
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowprocessor:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-10 19:50:01.645
+!MESSAGE The POM for org.tinygroup:org.tinygroup.cepcorenetty:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-10 19:50:01.655
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowbasicservice:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-10 19:50:01.686
+!MESSAGE The POM for org.tinygroup:org.tinygroup.cepcorebasicservice:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-10 19:50:01.696
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowplugin:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-10 19:50:01.706
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowservicecomponent:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-10 19:50:01.716
+!MESSAGE The POM for org.tinygroup:org.tinygroup.flowbasiccomponent:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-10 19:50:01.726
+!MESSAGE The POM for org.tinygroup:org.tinygroup.jcscache:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-10 19:50:01.737
+!MESSAGE The POM for org.tinygroup:org.tinygroup.dbfilter:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-10 19:50:01.744
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobyannotation:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-10 19:50:01.754
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobyxml:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-10 19:50:01.766
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobyflow:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-10 19:50:01.776
+!MESSAGE The POM for org.tinygroup:org.tinygroup.hellobymvc:jar:1.2.0-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-05-10 19:50:18.201
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-05-10 19:50:18.203
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\hunter'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-10 19:50:26.307
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-05-10 19:50:26.340
+!MESSAGE Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-05-10 19:55:12.931
+!MESSAGE An internal error occurred during: "方言重构".
+!STACK 0
+java.lang.NullPointerException
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.getFolderInProject(ScanOperationHelper.java:170)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4FileByExtension(ScanOperationHelper.java:203)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4File(ScanOperationHelper.java:156)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject(ScanOperationHelper.java:53)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.getAllStdTypes(Activator.java:167)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.access$2(Activator.java:166)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator$2.run(Activator.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-05-10 19:55:12.931
+!MESSAGE An internal error occurred during: "方言重构".
+!STACK 0
+java.lang.NullPointerException
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.getFolderInProject(ScanOperationHelper.java:170)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4FileByExtension(ScanOperationHelper.java:203)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4File(ScanOperationHelper.java:156)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject(ScanOperationHelper.java:53)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.getAllStdTypes(Activator.java:167)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.access$2(Activator.java:166)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator$2.run(Activator.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-05-10 19:55:12.931
+!MESSAGE An internal error occurred during: "方言重构".
+!STACK 0
+java.lang.NullPointerException
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.getFolderInProject(ScanOperationHelper.java:170)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4FileByExtension(ScanOperationHelper.java:203)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4File(ScanOperationHelper.java:156)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject(ScanOperationHelper.java:53)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.getAllStdTypes(Activator.java:167)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.access$2(Activator.java:166)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator$2.run(Activator.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-05-10 19:55:12.931
+!MESSAGE An internal error occurred during: "方言重构".
+!STACK 0
+java.lang.NullPointerException
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.getFolderInProject(ScanOperationHelper.java:170)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4FileByExtension(ScanOperationHelper.java:203)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject4File(ScanOperationHelper.java:156)
+	at org.tinygroup.studio.eclipse.framework.scan.ScanOperationHelper.scanProject(ScanOperationHelper.java:53)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.getAllStdTypes(Activator.java:167)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator.access$2(Activator.java:166)
+	at org.tinygroup.sutdio.eclipse.metadata.ui.Activator$2.run(Activator.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
