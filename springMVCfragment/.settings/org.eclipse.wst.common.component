@@ -3,7 +3,13 @@
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/configuration"/>
-        <dependent-module archiveName="subProject001.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/subProject001/subProject001">
+        <dependent-module deploy-path="/WEB-INF/lib" handle="module:/resource/subProject0001/subProject0001">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="subProject0002.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/subProject0002/subProject0002">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="subProject0003.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/subProject0003/subProject0003">
             <dependency-type>uses</dependency-type>
         </dependent-module>
         <property name="context-root" value="springMVCfragment"/>

@@ -1,4 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Delete 2 resources" deleteContents="false" description="Delete 2 resources" element1="/org.tinygroup.websample" element2="/webpanda" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="2" stamp="1431258912931"/>
+<session version="1.0">&#x0A;<refactoring comment="Delete 2 resources" deleteContents="false" description="Delete 2 resources" element1="/org.tinygroup.websample" element2="/webpanda" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="2" stamp="1431258912931"/>&#x0A;<refactoring comment="Rename resource &apos;subProject001&apos; to &apos;subProject0001&apos;" description="Rename resource &apos;subProject001&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/subProject001" name="subProject0001" stamp="1431269960611" updateReferences="true"/>
 </session>

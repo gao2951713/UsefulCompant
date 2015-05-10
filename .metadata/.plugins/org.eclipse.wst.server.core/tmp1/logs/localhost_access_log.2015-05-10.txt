@@ -8,3 +8,17 @@
 0:0:0:0:0:0:0:1 - - [10/May/2015:20:12:51 +0800] "GET /js/common/commonFunc.js HTTP/1.1" 404 997
 0:0:0:0:0:0:0:1 - - [10/May/2015:20:12:53 +0800] "GET /My97DatePicker/WdatePicker.js HTTP/1.1" 404 1009
 0:0:0:0:0:0:0:1 - - [10/May/2015:20:12:53 +0800] "GET /js/system/index.js HTTP/1.1" 404 987
+127.0.0.1 - - [10/May/2015:22:32:47 +0800] "GET / HTTP/1.1" 404 951
+127.0.0.1 - - [10/May/2015:22:34:41 +0800] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [10/May/2015:22:35:00 +0800] "GET /example HTTP/1.1" 404 965
+0:0:0:0:0:0:0:1 - - [10/May/2015:22:35:10 +0800] "GET /example/hello HTTP/1.1" 404 977
+0:0:0:0:0:0:0:1 - - [10/May/2015:22:35:31 +0800] "GET /springMVCfragment HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [10/May/2015:22:35:32 +0800] "GET /springMVCfragment/ HTTP/1.1" 200 1835
+0:0:0:0:0:0:0:1 - - [10/May/2015:22:35:32 +0800] "GET /css/system/dashboard.css HTTP/1.1" 404 999
+0:0:0:0:0:0:0:1 - - [10/May/2015:22:35:32 +0800] "GET /js/common/commonFunc.js HTTP/1.1" 404 997
+0:0:0:0:0:0:0:1 - - [10/May/2015:22:35:32 +0800] "GET /My97DatePicker/WdatePicker.js HTTP/1.1" 404 1009
+0:0:0:0:0:0:0:1 - - [10/May/2015:22:35:32 +0800] "GET /js/system/index.js HTTP/1.1" 404 987
+0:0:0:0:0:0:0:1 - - [10/May/2015:22:35:32 +0800] "GET /js/common/commonFunc.js HTTP/1.1" 404 997
+0:0:0:0:0:0:0:1 - - [10/May/2015:22:35:32 +0800] "GET /My97DatePicker/WdatePicker.js HTTP/1.1" 404 1009
+0:0:0:0:0:0:0:1 - - [10/May/2015:22:35:32 +0800] "GET /js/system/index.js HTTP/1.1" 404 987
+0:0:0:0:0:0:0:1 - - [10/May/2015:22:36:11 +0800] "GET /springMVCfragment/hello HTTP/1.1" 200 173

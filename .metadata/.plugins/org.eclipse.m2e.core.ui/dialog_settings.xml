@@ -18,19 +18,6 @@
 		<item value="0" key="y"/>
 		<item value="400" key="x"/>
 	</section>
-	<section name="wizardPage">
-		<list key="groupId">
-			<item value="codingYun-Demo"/>
-		</list>
-		<list key="name">
-		</list>
-		<list key="artifactId">
-			<item value="codingYun-Demo"/>
-		</list>
-		<list key="version">
-			<item value="0.0.1-SNAPSHOT"/>
-		</list>
-	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
 			<item value="E:\Store\websample"/>
@@ -42,6 +29,19 @@
 			<item value="[artifactId]-[version]"/>
 			<item value="[groupId].[artifactId]"/>
 			<item value="[groupId].[artifactId]-[version]"/>
+		</list>
+	</section>
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="codingYun-Demo"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="codingYun-Demo"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
 		</list>
 	</section>
 </section>
