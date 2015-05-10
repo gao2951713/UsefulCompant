@@ -3,6 +3,7 @@
 	<name>springMVCfragment</name>
 	<comment></comment>
 	<projects>
+		<project>subProject001</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
