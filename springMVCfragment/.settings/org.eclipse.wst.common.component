@@ -12,6 +12,9 @@
         <dependent-module archiveName="subProject0003.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/subProject0003/subProject0003">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="subProject0004.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/subProject0004/subProject0004">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="springMVCfragment"/>
         <property name="java-output-path" value="/springMVCfragment/build/classes"/>
     </wb-module>

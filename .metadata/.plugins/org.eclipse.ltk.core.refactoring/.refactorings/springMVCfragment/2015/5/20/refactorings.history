@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;springMvc3-servlet.xml&apos; to &apos;subProject0002/configuration&apos;&#x0D;&#x0A;- Original project: &apos;springMVCfragment&apos;&#x0D;&#x0A;- Destination element: &apos;subProject0002/configuration&apos;&#x0D;&#x0A;- Original element: &apos;springMvc3-servlet.xml&apos;" description="Copy file" destination="=subProject0002/configuration" element1="configuration/springMvc3-servlet.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1431352655711" units="0" version="1.0"/>
+</session>

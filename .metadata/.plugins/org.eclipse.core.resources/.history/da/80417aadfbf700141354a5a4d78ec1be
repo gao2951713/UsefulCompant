@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<title>this is a test page for sub module</title>
+	</head>
+	<body>
+	<h1> :) module21 access successful !</h1>
+	<p>@SuppressWarnings("unchecked")
+	@RequestMapping("/dotestmodule21")
+	@ResponseBody
+	public void forword2Module21(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+		Map models=new HashMap<>();
+		System.out.println(req.getParameter("p"));
+		 req.getRequestDispatcher("view/project002/module21.jsp").forward(req, resp);
+	}
+	</p>
+	</body>
+</html>

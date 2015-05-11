@@ -1,0 +1,14 @@
+127.0.0.1 - - [12/May/2015:00:02:44 +0800] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [12/May/2015:00:03:24 +0800] "GET /springMVCfragment/dotestmodule2 HTTP/1.1" 200 181
+0:0:0:0:0:0:0:1 - - [12/May/2015:00:04:17 +0800] "GET /springMVCfragment/hello HTTP/1.1" 200 173
+127.0.0.1 - - [12/May/2015:00:06:10 +0800] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [12/May/2015:00:06:24 +0800] "GET /springMVCfragment/dotestmodule2 HTTP/1.1" 404 -
+0:0:0:0:0:0:0:1 - - [12/May/2015:00:06:42 +0800] "GET /springMVCfragment/dotestmodule2 HTTP/1.1" 404 -
+127.0.0.1 - - [12/May/2015:00:08:34 +0800] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [12/May/2015:00:08:59 +0800] "GET /springMVCfragment/dotestmodule2 HTTP/1.1" 200 181
+127.0.0.1 - - [12/May/2015:00:28:40 +0800] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [12/May/2015:00:28:58 +0800] "GET /springMVCfragment/dotestmodule21 HTTP/1.1" 200 182
+0:0:0:0:0:0:0:1 - - [12/May/2015:00:29:04 +0800] "GET /springMVCfragment/dotestmodule2 HTTP/1.1" 200 181
+0:0:0:0:0:0:0:1 - - [12/May/2015:00:31:21 +0800] "GET /springMVCfragment/dotestmodule2 HTTP/1.1" 200 524
+0:0:0:0:0:0:0:1 - - [12/May/2015:00:31:30 +0800] "GET /springMVCfragment/dotestmodule21 HTTP/1.1" 200 564
+0:0:0:0:0:0:0:1 - - [12/May/2015:00:35:52 +0800] "GET /springMVCfragment/dotestmodule21 HTTP/1.1" 200 818

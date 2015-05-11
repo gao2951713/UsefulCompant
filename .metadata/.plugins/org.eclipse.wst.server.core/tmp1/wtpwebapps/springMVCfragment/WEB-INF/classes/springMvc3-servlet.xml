@@ -16,6 +16,7 @@
     
     <!-- 启动扫描所有的controller -->
     <context:component-scan base-package="org.standardframe.core.action"/>
+    <context:component-scan base-package="org.plugin.module0002.action"/>
     
     <!--  主要作用于@Controller，激活该模式
         
