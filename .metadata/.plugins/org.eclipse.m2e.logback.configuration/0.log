@@ -1143,3 +1143,4 @@ Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was
 2015-05-10 19:50:26,341 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\Store\webpanda\src\test\resources
 2015-05-12 00:23:17,091 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-8.1.16.v20140903
 2015-05-12 00:23:17,399 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started SelectChannelConnector@127.0.0.1:50319
+2015-05-12 00:48:25,849 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - stopped o.e.j.s.ServletContextHandler{/help,null}

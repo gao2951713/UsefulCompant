@@ -1,5 +1,5 @@
 #Tomcat publish data
-#Tue May 12 00:35:19 CST 2015
-org.eclipse.jst.jee.server\:subProject0001=WEB-INF/lib/subProject0001.jar
+#Tue May 12 23:56:37 CST 2015
 org.eclipse.jst.jee.server\:/binary\:E\:\\workspace\\springMVCfragment\\WebContent\\WEB-INF\\lib\\spring-web-3.2.5.RELEASE.jar=WEB-INF/lib/spring-web-3.2.5.RELEASE.jar
+org.eclipse.jst.jee.server\:subProject0001=WEB-INF/lib/subProject0001.jar
 org.eclipse.jst.jee.server\:subProject0002=WEB-INF/lib/subProject0002.jar

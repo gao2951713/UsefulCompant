@@ -33,9 +33,20 @@ public class Sample {
 	@ResponseBody
 	public void forword2Module21(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
-		Map models=new HashMap<>();
+		//如果前台响应了forword2Module21这个方法，则在前台的backtoforce变量就会有内容显示。否则没有。
+		req.setAttribute("backtoforce", "this is a message from background method value set!");
 		System.out.println(req.getParameter("p"));
 		 req.getRequestDispatcher("view/project002/module21.jsp").forward(req, resp);
+	}
+	
+	@SuppressWarnings("unchecked")
+	@RequestMapping("/findUser")
+	@ResponseBody
+	public void forword2user(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+		Map models=new HashMap<>();
+		System.out.println(req.getParameter("p"));
+		 req.getRequestDispatcher("view/project002/user.jsp").forward(req, resp);
 	}
 	
 }

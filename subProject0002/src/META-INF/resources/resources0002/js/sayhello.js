@@ -1,0 +1,1 @@
+alert("hello!this is from under resources0002/js folder's message!");

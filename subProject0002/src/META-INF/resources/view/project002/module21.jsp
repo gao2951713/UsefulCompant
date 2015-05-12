@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="zh-cn">
 	<head>
@@ -16,6 +17,7 @@
 		 req.getRequestDispatcher("view/project002/module21.jsp").forward(req, resp);
 	}
 	</p>
+	<h3>${backtoforce}</h3>
 	<h3>今天测试发现采用serverlet跳转不灵活，但用springMVC标签在web fragment中跳转页面失败。因此，采用上述写法，利用springMVC注解加上servlet请求实现<br>
 	在web fragment中实现前后台的指定跳转</h3>
 	</body>
